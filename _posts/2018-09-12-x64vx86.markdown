@@ -8,4 +8,4 @@ fig-caption: # Add figcaption (optional)
 tags: 
 ---
 
-![ex_screenshot](./img/1.png)
+![ex_screenshot](https://github.com/keukdong/keukdong.github.io/blob/master/assets/img/1.PNG?raw=true)
