@@ -16,7 +16,7 @@ x64에서 돌리면 1번의 class size는 16, 2번의 class size는 24가 나온
 ![3](/assets/img/4.PNG)
 ![3](/assets/img/3.PNG)
 
-조사식을 들여다보니까 64bit에서는 포인터는 8byte를 차지하는것을 확인함.
+조사식을 들여다보니까 64bit에서는 포인터는 8byte를 차지하는것을 확인함.<br>
 int는 32bit->64bit여도 4byte를 차지하지만 포인터는 메모리 주소를 가르킬 수 있기때문에 WORD SIZE를 따라가는게 아닐까싶다.
 역시 bit가 바뀜에 따라 Word Alignment를 8byte씩 하는걸 알수있다. 
 
