@@ -12,7 +12,7 @@ site-twitter: "@ggasheaven" #if your site has a twitter account, enter it here
 
 # Author Settings
 author: "keukdong(이상해씨++)" # add your name
-author-img:  # add your photo
+author-img: assets/img/이상해씨 # add your photo
 about-author: "C/C++ and a little cute python"  # add description
 social-twitter: "@ggasheaven" # add your Twitter handle
 social-facebook: . # add your Facebook handle
