@@ -13,5 +13,7 @@ tags:
 
 x64에서 돌리면 1번의 class size는 16, 2번의 class size는 24가 나온다.
 
-![3](/assets/img/3.PNG)
 ![3](/assets/img/4.PNG)
+![3](/assets/img/3.PNG)
+
+조사식을 들여다보니까 64bit에서는 포인터는 8byte를 차지하는것을 확인함.
