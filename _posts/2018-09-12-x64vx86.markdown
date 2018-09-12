@@ -8,4 +8,4 @@ fig-caption: # Add figcaption (optional)
 tags: 
 ---
 
-![ex_screenshot](./img/1.jpg)
+![ex_screenshot](./img/1.png)
