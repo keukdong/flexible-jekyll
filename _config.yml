@@ -8,13 +8,13 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://keukdong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: ggasheaven #if your site has a twitter account, enter it here
+site-twitter: "@ggasheaven" #if your site has a twitter account, enter it here
 
 # Author Settings
-author: keukdong(이상해씨++) # add your name
+author: "keukdong(이상해씨++)" # add your name
 author-img:  # add your photo
-about-author: C/C++ and a little cute python  # add description
-social-twitter: @ggasheaven # add your Twitter handle
+about-author: "C/C++ and a little cute python"  # add description
+social-twitter: "@ggasheaven" # add your Twitter handle
 social-facebook: . # add your Facebook handle
 social-github: keukdong # add your Github handle
 social-linkedin: . # add your Linkedin handle
