@@ -12,5 +12,5 @@ tags:
 ![ex_screenshot](https://github.com/keukdong/keukdong.github.io/blob/master/assets/img/2.PNG?raw=true)
 
 x64에서 돌리면 1번의 class size는 16, 2번의 class size는 24가 나온다.
-![3](./assets/img/3.png)
-![3](./assets/img/4.png)
+![3](/assets/img/3.png)
+![3](/assets/img/4.png)
