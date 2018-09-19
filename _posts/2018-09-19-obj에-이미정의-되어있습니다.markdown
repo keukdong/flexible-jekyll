@@ -1,0 +1,21 @@
+A.h 에 int();
+있는데
+a.cpp에서도 A();
+b.cpp에서도 A();
+호출하는 경우, 이미 정의되어있습니다. 라는 메세지를 띄우면서 빌드되지 않는다.
+
+해결
+1. static int A(){
+return 5;
+}
+2. template : name mangling() linking time
+
+Q.
+If the linker does prevent the code duplication, how does it do it? Must it "know" what templates are?
+Does it always prevent code duplication regarding multiple uses of the same templated code across multiple object files?
+
+A.
+Only the linker can decide which code is unused, which template is duplicate, etc.
+This is done by using "Weak Symbols" in the object's symbol list: 
+  Symbols that the linker can remove if they appear multiple times
+  (as opposed to other symbols, like user-defined functions, that cannot be removed if duplicate and cause a linking error).
