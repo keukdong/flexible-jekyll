@@ -1,8 +1,7 @@
 ![str](/assets/img/strangec120.png)
 # chapter 1 (2018.10.02)
 요약
-## 
-## define 대신 const, enum, inline
+## 2. define 대신 const, enum, inline
 클래스 안 정적 상수
 ~~~c
 //선언부
@@ -22,7 +21,13 @@ private:
   int score[num]; //가능
 ~~~
 
-## 낌새만 보이면 const를 들이대라
+~~~c
+const int* p : 포인터가 가리키는 데이터가 상수가 된다. p가 가리키는 내용을 바꿀 수 없다.
+int* const p : 포인터의 주소가 상수가 된다. 
+const int* const p : "완전체"
+~~~
+
+## 3. 낌새만 보이면 const를 들이대라
 ~~~c
 const vecotr<int>::iterator it= vec.begin();
 *it = 10; // ok : iter가 가리키는 대상을 변경
@@ -81,7 +86,7 @@ char& operator[](int idx){
 비상수 함수는 상수함수를 호출하여 상수 반환 받고 그걸 const casting을해서 const 캐스팅을 떼어낸다.
 반대의 경우: 상수함수는 안에서 비상수 멤버를 호출하여 수정하겠다는 컴파일러와의 약속을 어김 어기면? error 발생.
 
-## 객체 사용 전에 반드시 객체 초기화
+## 4. 객체 사용 전에 반드시 객체 초기화
 객체 초기화는 생성자 안에 """대입"""하지말고 멤버 초기화 리스트를 사용하여 초기화하자.
 
 불변의 데이터 초기화 순서
