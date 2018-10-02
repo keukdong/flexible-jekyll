@@ -22,9 +22,9 @@ private:
 ~~~
 
 ~~~c
-const int* p : 포인터가 가리키는 데이터가 상수가 된다. p가 가리키는 내용을 바꿀 수 없다.
-int* const p : 포인터의 주소가 상수가 된다. 
-const int* const p : "완전체"
+const int* p //포인터가 가리키는 데이터가 상수가 된다. p가 가리키는 내용을 바꿀 수 없다.
+int* const p //포인터의 주소가 상수가 된다. 
+const int* const p // "완전체"
 ~~~
 
 ## 3. 낌새만 보이면 const를 들이대라
@@ -40,6 +40,7 @@ cit++; // ok
 상수멤버함수를 쓰는 이유
 1. 객체의 멤버 변수값을 변경 가능한 함수와 변경 불가능한 함수를 나누어 클래스의 인터페이스를 이해하기 쉽게한다.
 2. 상수 객체를 사용하기 위해서
+
 ~~~c
 const char& operator[](int position) const{
   return text[position];
@@ -73,7 +74,7 @@ int length() const{
 상수 비상수 차이만있고 비슷하게 생긴 함수를 두번이나 중복해서 쓸경우 만약 코드가 길다면?
 ~~~c
 const char& operator[](int idx) const{
-  ... 블라블라 블라
+  ...// 블라블라 블라
   return text[idx];
 }
 char& operator[](int idx){
