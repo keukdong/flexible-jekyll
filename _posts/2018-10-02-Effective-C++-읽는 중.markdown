@@ -11,12 +11,15 @@ class A{
     ...
 }
 //구현부
-const int A::num ; // 
-
+const int A::num ; //정의 
 ~~~
 
 나열자 둔갑술
-
+~~~c
+private:
+  enum{ num=5; };
+  int score[num]; //가능
+~~~
 
 ## 낌새만 보이면 cosnst를 들이대라
 
